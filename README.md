@@ -1,2 +1,8 @@
-# otw-bandit-notes
-my personal notes on learning Linux CLI through OverTheWire bandit
+# Personal Notes
+
+My personal notes on learning Linux CLI through OverTheWire bandit
+
+this is still work in progress
+
+
+---
