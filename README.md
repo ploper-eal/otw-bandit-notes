@@ -47,3 +47,19 @@ use `ls` to list the files, and `cat` to print out the password for bandit1
 
 
 ---
+
+
+# level 1-2
+
+used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
+
+Summary :
+- use `./` to access dashed filenames
+
+use `ls` to list the files, and use `cat ./ ` to print out the contents of the dashed filename 
+
+
+---
+
+
+# level 2-3
