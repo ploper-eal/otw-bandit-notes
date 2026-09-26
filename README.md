@@ -27,7 +27,7 @@ explenation below :
 ---
 
 
-# level 0-1
+# level 0-1 // bandit0
 
 used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
 
@@ -49,17 +49,40 @@ use `ls` to list the files, and `cat` to print out the password for bandit1
 ---
 
 
-# level 1-2
+# level 1-2 // bandit1
 
 used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 Summary :
-- use `./` to access dashed filenames
-
-use `ls` to list the files, and use `cat ./ ` to print out the contents of the dashed filename 
+there will be a file with a dasb(-). Typing in `cat -` wont work, since it acctually tells the cat (concatenate) utility to read data from standard input (your keyboard or a piped stream) instead of a file.
+- use `./` to tell cat that it is a normal argument or file since there is a slash
+- can also use `--` before a filename, to stop flagchecking
 
 
 ---
 
 
-# level 2-3
+# level 2-3 // bandit2
+
+used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
+
+Summary : 
+there will be a file with the name --spaces in this filename--. when we type in `cat --spaces in the filename--`, it will acctullay look for 3 diffrent files(--spaces, in, the, filename--)
+- use `" "` to treat the name as a singgle word
+- also use `--` to stop flagchecking also
+
+
+---
+
+
+# level 3-4 // bandit3
+
+used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
+
+Summary :
+there will be a hidden file inside a directory.
+- use `cd` to change the directory
+- use `ls -la`. the added "-la" means show all files including the hidden ones
+
+
+---
