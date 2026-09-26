@@ -86,3 +86,27 @@ there will be a hidden file inside a directory.
 
 
 ---
+
+
+## level 4-5 // bandit4
+
+used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
+
+Summary :
+there will be a lot of files inside the inhere directory, checck eachone to finde the only human-readable file
+- use `cat --` on each file
+
+
+---
+
+
+## level 5-6 // bandit5
+
+Summary :
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+1. human-readable
+2. 1033 bytes in size
+3. not executable
+
+- use 
