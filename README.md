@@ -27,7 +27,7 @@ explenation below :
 ---
 
 
-# level 0-1 // bandit0
+## level 0-1 // bandit0
 
 used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
 
@@ -49,7 +49,7 @@ use `ls` to list the files, and `cat` to print out the password for bandit1
 ---
 
 
-# level 1-2 // bandit1
+## level 1-2 // bandit1
 
 used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
 
@@ -62,7 +62,7 @@ there will be a file with a dasb(-). Typing in `cat -` wont work, since it acctu
 ---
 
 
-# level 2-3 // bandit2
+## level 2-3 // bandit2
 
 used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
 
@@ -75,7 +75,7 @@ there will be a file with the name --spaces in this filename--. when we type in 
 ---
 
 
-# level 3-4 // bandit3
+## level 3-4 // bandit3
 
 used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
 
