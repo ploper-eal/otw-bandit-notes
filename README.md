@@ -86,3 +86,58 @@ there will be a hidden file inside a directory.
 
 
 ---
+
+
+## level 4-5 // bandit4
+
+used commands ; `ls`, `cd`, `cat`, `file`, `du`, `find`
+
+Summary :
+there will be a lot of files inside the inhere directory, use the file command to see the files filetype
+- use `file ./*` to check all file data types
+    - `file` is to check the filetype
+    - `*` means everyfile in the current directory, followed by `./` to stop flagchecking files with dashed filenames
+
+
+---
+
+
+## level 5-6 // bandit5
+
+Summary :
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+1. human-readable
+2. 1033 bytes in size
+3. not executable
+
+- use `find . -type f -size 1033c ! -executable`
+  - using find  to search for a file with specific details
+  - `.` means the current directory
+  - `-type f` means to find a regular file and not a directory
+  - `-size 1033c` means to search for a file with 1033c(bytes) in size
+  - `! -executable` means to exclude any executable files from the search
+
+
+ ---
+
+
+ ## level 6-7 // bandit6
+
+ Summary : 
+ find the password somewhere in the server that has these properties:
+ 1. owned by user bandit7
+ 2. owned by group bandit6
+ 3. 33 bytes in size
+
+- use `find / -user bandit7 -group bandit6 2>/dev/null`
+  - `/` means to lookup the intire server
+  - `-user bandit7` shrinks the lookup to only files owned by user bandit7
+  - `-group bandit6` shrinks it again to only files owned by group bandit6
+  - `2>/dev/null` means to hide any error massage (permission denied, etc)
+
+
+---
+
+
+## level 7-8 // bandit7
